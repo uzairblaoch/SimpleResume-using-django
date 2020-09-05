@@ -1,0 +1,46 @@
+{% extends 'resume/base.html' %} {% load static %} {% block title %}Home
+{% endblock %} {% block content %}
+<div class="text-center">
+  <img class="mt-5 img-thumbnail" width="250px" src="{% static 'resume/images/pic.jpg' %}" alt="profile_pic" />
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+  <h1 class="font-weight-bold st-font">Hello floks,</h1>
+  <div class="px-4" style="line-height: 2rem">
+    <p style="text-indent: 100px">
+      I am <b class="text-warning">Uzair Baloch</b> having 3 years experience of
+      Full Stack Web Development experience of global business, I offer
+      technical expertise your seeking for your web developer position.
+    </p>
+    <p>
+      Since perusing my degree in Computer Science from NFC IET Multan. I'm
+      serving as a web developer at <b class="text-warning">ARUM Solutions.</b>
+      In this position, I've led Web Development projects for clients in diverse
+      industries including technology, hospitality, retail and financial
+      services.
+    </p>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'resume:contact' %}" class="btn btn-outline-warning btn-lg my-3 m-5">Hire Me</a>
+    <a href="{% url 'resume:contact' %}" class="btn btn-outline-info btn-lg my-3">Contact</a>
+  </div>
+</div>
+<div class="center  text-white">
+  <div class="row">
+    <div class="col-md-4">
+      <h5 class="mt-5 mr-3">For 24/7 hour support</h5>
+    </div>
+
+
+
+    <div class="col-md-8">
+      <div class="d-flex mt-5 mb-5">
+
+        <input type="text" class="form-control" placeholder="Email" />
+        <input type="submit" class="btn btn-sub" value="Subscribe" />
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+{% endblock content %}
